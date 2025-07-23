@@ -1,0 +1,12 @@
+HTML 5.2 W3C Recommendation, 14 December 2017
+This version: https://www.w3.org/TR/2017/REC-html52-20171214/
+Abstract This specification defines the 5th major version, second minor revision of the core language 
+of the World Wide Web: the Hypertext Markup Language (HTML). In this version, new features continue 
+to be introduced to help Web application authors, new elements continue to be introduced based on research
+ into prevailing authoring practices, and special attention continues to be given to defining clear conformance
+ criteria for user agents in an effort to improve interoperability.
+Status of this document This section describes the status of this document at the time of its publication. 
+Other documents may supersede this document. A list of current W3C publications and the latest revision of 
+this technical report can be found in the W3C technical reports index at https://www.w3.org/TR/.
+This document was published by the Web Platform Working Group as a W3C Recommendation for HTML 5.2 that 
+would obsolete the HTML 5.1 Recommendation.

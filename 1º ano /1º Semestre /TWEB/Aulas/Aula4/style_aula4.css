@@ -1,0 +1,53 @@
+body{
+    color:#434027;
+    font-family: Georgia;
+}
+
+#TW{
+    background-color: #FCFCF5;
+    border: 5px solid #C7C2A1;
+    padding: 0px 10px 0px 10px;
+    text-align: justify;
+}
+
+p em{
+    text-decoration: underline;
+}
+
+.box-conteudo{
+    margin: 30px 10px 20px 0px;
+    padding: 10px;
+    border: 1px inset #C7C2A1;
+    background-color: #F3F1DC
+}
+
+.box-conteudo h1{
+    font-size:20px;
+    margin:0;
+}
+
+#teorica li:first-child{
+    font-style: italic;
+    font-weight: bolder;
+}
+
+p::first-letter{
+    font-size: 30px;
+}
+
+a{
+    color:black;
+}
+
+a:hover{
+    background-color: #FF7C35;
+    text-decoration: none;
+    color: white;
+}
+
+[class^="destaque"]{
+    color: red;
+}
+
+[href^="mailto"]::before {content: "<";}
+[href^="mailto"]::after {content: ">";}
