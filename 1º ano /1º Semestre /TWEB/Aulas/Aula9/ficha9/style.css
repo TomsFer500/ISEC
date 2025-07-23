@@ -1,0 +1,41 @@
+.gradient{
+    background: rgb(150, 150, 150);
+    background: linear-gradient(90deg, rgba(150, 150, 150, 1) 0%, rgba(221, 221, 221, 1) 73%);
+}
+
+html,body{
+    height:100%;
+    font-size:1rem;
+    font-family: 'Montserrat', sans-serif;
+   }
+
+   .page-header{
+    margin-top: 4rem;
+    font-size: 1.2em;
+    color: black;
+   }
+
+   .features{
+    color: #555;
+   }
+
+   .icon{
+    background-color: lightseagreen;
+    color: white;
+    height: 4rem;
+    width: 4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+   }
+
+   .gallery img{
+    border-radius: 5%;
+   }
+
+   footer{
+    font-size: 0.9rem;
+    padding: 1rem;
+    color: black;
+   }

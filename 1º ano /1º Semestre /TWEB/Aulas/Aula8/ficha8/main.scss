@@ -1,0 +1,114 @@
+$text-color: #222222;
+$theme-color: #170a48;
+$secondary-color: #f27731;
+$ternary-color: #ccf962;
+$menu-item-color: white;
+$link-color: $secondary-color;
+$text-font: 'Open Sans', sans-serif;
+$headline-font: Georgia, serif;
+$content-width:940px;
+$header-height:60px;
+$footer-height:60px;
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    color: $text-color;
+    font-family: $text-font;
+}
+
+h1, h2, h3, h4 {
+    font-family: $headline-font;
+}
+
+p {
+    font-family: $text-font;
+}
+a {
+    color: $link-color
+}
+
+.wrapper {
+    margin: o auto;
+    display: grid;
+    grid-gap: 10px;
+    max-width: $content-width;
+
+    header {
+        min-height: $header-height;
+        background-color: $theme-color;
+        border-radius: 5px;
+
+        #main-menu {
+                color: $menu-item-color;
+                text-decoration: none;
+            ul{
+                padding: 0px 10px;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+            }
+                li{
+                    padding: 3px 0px;
+                }    
+                &:hover{
+                    border-bottom: 2px white solid;
+                }
+            }
+        }
+
+    #content {
+        a{
+            color:$link-color;
+            &: hover {
+                color: darken($link.color, 15%);
+            }
+        }
+    }
+
+    #sidebar {
+        ul{
+        padding: 0;
+        }
+            li{
+                list-style: none;
+                padding: 5px 0px;
+                border-bottom: 1px dashed #ddd;
+            }
+    }
+
+    footer {
+        background-color: $ternary-color;
+        height: $footer-height;
+        border-radius: 5px;
+    }
+
+    @mixin codereuse ($colorbg) {
+        background-color: $colorbg;
+        color: white;
+    }
+
+    .code-button{
+        @include codereuse(orange);
+        padding: 8px;
+        border-radius: 5px;
+    }
+@media screen and (min-width: 525px) {
+   grid-template-columns: 4fr 1fr;
+
+   header #main-menu ul {
+    flex-direction: row;
+   }
+
+   header #main-menu li{
+    padding-right: 20px;
+   }
+
+   header, footer {
+    grid-column: 1 / -1;
+   }
+}
+
+}
